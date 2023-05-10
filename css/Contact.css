@@ -1,7 +1,7 @@
 body{
-    background-image: url(/Assets/images/stars.gif);
-    background-repeat: no-repeat;
-    background-size: cover; 
+    /* background-image: linear-gradient(#6a040f,#370617,#03071e); */
+    background-image: linear-gradient(#264653,#2a9d8f,#03071e);
+
 }
 /* Navigation (Header) */
 .navbar-dark {
@@ -13,3 +13,10 @@ body{
        color: #2335e8 !important;
    }
    /* End of header */
+
+   /* Form */
+.form{
+    
+}
+
+   /* end of form */

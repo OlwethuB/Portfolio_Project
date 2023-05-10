@@ -1,5 +1,7 @@
-body{  
-    background-image: linear-gradient(#025ecf,#02e8b6);
+body{
+    /* background-image: linear-gradient(#6a040f,#370617,#03071e); */
+    background-image: linear-gradient(#264653,#2a9d8f,#03071e);
+
 }
 /* Navigation (Header) */
 .navbar-dark {
