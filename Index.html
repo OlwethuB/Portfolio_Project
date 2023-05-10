@@ -1,65 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Portfolio Project</title>
 </head>
+
 <body>
-    <header class="pb-3 mb-2 border-bottom">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Top -->
+    <header class="pb-3 mb-2 border-bottom" id="Top">
+        <nav class="navbar bg-dark navbar-dark navbar-expand-lg">
             <div class="container-fluid">
-                <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-                    <img src="/Assets/logoSomething.png" alt="" width="80" height="100">
+                <a href="/" class="d-flex align-items-center text-decoration-none" >
+                    <img src="/Assets/images/_logo_.jpg" alt="" width="50" height="70" style="border-radius: 50%;">
                     <title>Bootstrap</title>
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
                         fill="currentColor"></path>
                     </svg>
-                    <span class="fs-4">Olwethu</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-right navbar-collapse navbar-dark-hover-color: #RGB66, 65, 66" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="dropdown-center navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/Index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/Index.html"
+                                    role="button" aria-expanded="false">About me</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#work-and-education">Education</a></li>
+                                    <li><a class="dropdown-item" href="#skills">Skills</a></li>
+                                    <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#work-and-education">Work</a></li>
+                        </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/index.html"
-                                role="button" aria-expanded="false">About me</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#education">Education</a></li>
-                                <li><a class="dropdown-item" href="#skills">Skills</a></li>
-                                <hr class="dropdown-divider">
+                            <a class="nav-link" href="/Assets/otherpages/Projects.html">Projects</a>
                         </li>
-                        <li><a class="dropdown-item" href="#work">Work</a></li>
-                    </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/otherpages/projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/otherpages/contact.html">Contact</a>
-                    </li>
-                    </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Assets/otherpages/Contact.html">Contact</a>
+                        </li>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
+    <!-- Top end -->
+
+    <!-- the actual body body -->
+    <main class="min-vh-100">
+        <!-- Introduction slide?... -->
+        <div class="container">
+            <div>
+                <span> </span>
+            </div>
+        </div>
+
+        <!-- "About me" -->
+        <!-- The slide in shit -->
+        <div class="container p-3 mb-2 bg-dark text-white" id="slidestuff">
+            <div class="row">
+                <div class="col animate__animated animate__slideInLeft animate__slow">
+                    <img src="/Assets/images/C12 Olwethu Bhiya (2).JPG" alt="My image" width="450" height="600">
+                </div>
+                <div
+                    class="col  align-content-center my-5 pt-5 col animate__animated animate__slideInRight animate__slow">
+                    <h1>Hi I am Olwethu Bhiya</h1>
+                    <br>
+                    <h1>Developer</h1>
+                    <br>
+                    <p>I am an aspiring full stack developer
+                        from Cape Town with a growing complexity in web development. I have the ability to code and
+                        design a fully functional website pushing past my limits as do so
+                    </p>
+                    <br>
+                    <p>I am good at coding and stuff</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- About about me -->
+    <section class="min-vh-100">
+        </div>
+        <h1 id="About_me" style="text-align: center;">About Me</h1>
+        <div class="p-5" style="text-align: center;">
+            <h2 id="skills">Skills</h2>
+            <p>
+            <h6>Computer Related</h6>
+            <img src="/Assets/images/css-removebg-preview.png" alt="CSS" width="150" height="150">
+            <img src="/Assets/images/html-removebg-preview.png" alt="HTML" width="100" height="100">
+            <img src="/Assets/images/Bootstrap_logo.svg-removebg-preview.png" alt="HTML" width="110" height="90">
+            <img src="/Assets/images/JavaScript-Logo.png" alt="Javascript" width="150" height="100">
+            <img src="/Assets/images/Python-logo.png" alt="Python" width="100" height="100">
+            </p>
+        </div>
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title mb-5" style="text-align: center;" id="work-and-education">Work and Education</h2>
+
+                            <div class="hori-timeline flex-row flex-nowrap" dir="ltr">
+                                <ul class="list-inline events">
+                                    <li class="list-inline-item event-list">
+                                        <div class="py-0">
+                                            <button class="btn btn-dark collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+                                                aria-expanded="false"
+                                                aria-controls="multiCollapseExample1 multiCollapseExample2"
+                                                fdprocessedid="usi3f6">See All</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-inline-item event-list">
+                                        <div class="py-0">
+                                            <a class="btn btn-dark collapsed" data-bs-toggle="collapse"
+                                                href="#multiCollapseExample1" role="button" aria-expanded="false"
+                                                aria-controls="multiCollapseExample1">2018-2022</a>
+                                            <div class="multi-collapse collapse" id="multiCollapseExample1" style="">
+                                                <div class="card card-body">
+                                                    High School 
+                                                    Parow High School 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-inline-item event-list">
+                                        <div class="py-0">
+                                            <a class="btn btn-dark collapsed" data-bs-toggle="collapse"
+                                                href="#multiCollapseExample2" role="button" aria-expanded="false"
+                                                aria-controls="multiCollapseExample2">Jan 2018-March 2020</a>
+                                            <div class="multi-collapse collapse" id="multiCollapseExample2" style="">
+                                                <div class="card card-body">
+                                                    Sunday school assistant teacher (Volunteering)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-inline-item event-list">
+                                        <div class="py-0">
+                                            <a class="btn btn-dark collapsed" data-bs-toggle="collapse"
+                                                href="#multiCollapseExample3" role="button" aria-expanded="false"
+                                                aria-controls="multiCollapseExample3">Jan 2018-June 2019</a>
+                                            <div class="multi-collapse collapse" id="multiCollapseExample3" style="">
+                                                <div class="card card-body">
+                                                    Cashier and Shop assistant at Big Fat Butcher
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-inline-item event-list">
+                                        <div class="py-0">
+                                            <a class="btn btn-dark collapsed" data-bs-toggle="collapse"
+                                                href="#multiCollapseExample4" role="button" aria-expanded="false"
+                                                aria-controls="multiCollapseExample4">Remember the job...</a>
+                                            <div class="multi-collapse collapse" id="multiCollapseExample4" style="">
+                                                <div class="card card-body">
+                                                    Volunteering at small temporary jobs
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-inline-item event-list">
+                                        <div class="py-0">
+                                            <a class="btn btn-dark collapsed" data-bs-toggle="collapse"
+                                                href="#multiCollapseExample5" role="button" aria-expanded="false"
+                                                aria-controls="multiCollapseExample5">April 2023</a>
+                                            <div class="multi-collapse collapse" id="multiCollapseExample5" style="">
+                                                <div class="card card-body">
+                                                    Student at Life Choices
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-inline-item event-list">
+                                        <div class="py-0">
+                                            <a class="btn btn-dark collapsed" data-bs-toggle="collapse"
+                                                href="#multiCollapseExample6" role="button" aria-expanded="false"
+                                                aria-controls="multiCollapseExample6">Big Shot Gal</a>
+                                            <div class="multi-collapse collapse" id="multiCollapseExample6" style="">
+                                                <div class="card card-body">
+                                                    on that Success biz
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end card -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- end of body body -->
 
 
 
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white mt-3">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Call -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
 
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-google"></i>
+                </a>
 
+                <!-- Youtube -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
 
+                <!-- Email -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
 
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-github"></i>
+                </a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> 
+        <!-- Copyright -->
+        <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class=" p-0 text-decoration-none " href="#Top" target="_top">
+                Olwethu Bhiya
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

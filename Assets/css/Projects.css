@@ -1,0 +1,13 @@
+body{  
+    background-image: linear-gradient(#025ecf,#02e8b6);
+}
+/* Navigation (Header) */
+.navbar-dark {
+    font-size: 22px;
+    color: #fdfdfd !important ;
+   }
+   
+   .navbar-dark :hover {
+       color: #2335e8 !important;
+   }
+   /* End of header */

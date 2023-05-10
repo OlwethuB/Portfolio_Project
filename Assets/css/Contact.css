@@ -1,0 +1,15 @@
+body{
+    background-image: url(/Assets/images/stars.gif);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+/* Navigation (Header) */
+.navbar-dark {
+    font-size: 22px;
+    color: #fdfdfd !important ;
+   }
+   
+   .navbar-dark :hover {
+       color: #2335e8 !important;
+   }
+   /* End of header */
