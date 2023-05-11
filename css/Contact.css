@@ -1,63 +1,63 @@
-body{
-    /* background-image: linear-gradient(#6a040f,#370617,#03071e); */
-    background-image: linear-gradient(#264653,#2a9d8f,#03071e);
-
+body {
+  /* background-image: linear-gradient(#6a040f,#370617,#03071e); */
+  background-image: linear-gradient(#264653,#2a9d8f,#2a9d8f, #03071e);
 }
 /* Navigation (Header) */
 .navbar-dark {
-    font-size: 22px;
-    color: #fdfdfd !important ;
-   }
-   
-   .navbar-dark :hover {
-       color: #2335e8 !important;
-   }
-   /* End of header */
+  font-size: 22px;
+  color: #fdfdfd !important ;
+}
 
-   /* Dark ver */
-   #darkver{
-    background-image: url(/Assets/images/Bkg-lndscp-1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-   }
+.navbar-dark :hover {
+  color: #2335e8 !important;
+}
+/* End of header */
+
+/* Dark ver */
+#darkver {
+  background-image: url(/Assets/images/Bkg-lndscp-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* form button */
 input {
-white-space: normal;
- padding: 15px 25px;
- border: solid;
- border-radius: 15px;
- color: black;
- z-index: 1;
- background: #2335e8;
- position: relative;
- font-weight: 1000;
- font-size: 17px;
- transition: all 250ms;
- overflow: hidden;}
+  white-space: normal;
+  padding: 15px 25px;
+  border: solid;
+  border-radius: 15px;
+  color: black;
+  z-index: 1;
+  background: #2335e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  transition: all 250ms;
+  overflow: hidden;
+}
 
 input::before {
- content: "";
- position: absolute;
- top: 0;
- left: 0;
- height: 100%;
- width: 0;
- border-radius: 15px;
- background-color: #212121;
- z-index: -1;
- transition: all 250ms
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  transition: all 250ms;
 }
 
 input:hover {
- color: #2335e8;
- background-color: #212121;
+  color: #2335e8;
+  background-color: #212121;
 }
 
 input:hover::before {
- width: 100%;
+  width: 100%;
 }
-   /* Form */
-   /* #sec{
+/* Form */
+/* #sec{
     background-color: #eb886f;
     border:10px solid #ef9d88;
     min-height: 50vh;
@@ -67,4 +67,4 @@ input:hover::before {
     align-items: center;
     font-size: 30px;
    } */
-   /* end of form */
+/* end of form */
