@@ -13,3 +13,58 @@ body{
        color: #2335e8 !important;
    }
    /* End of header */
+
+   /* project cards */
+   .card {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    width: 200px;
+    height: 200px;
+    background: #000;
+}
+.card .image {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.card .image img {
+    width: 200px;
+    transition: .5s;
+}
+.card:hover .image img {
+    opacity: .5;
+    transform: translateY(100%);/*100%*/
+}
+.card .card-descrp {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    width: 200px;
+    height: 200px;
+    background: blue;
+    transition: .5s;
+    transform-origin: 0%;
+    transform: perspective(200px) rotateX(-90deg);
+}
+.card:hover .card-descrp {
+    transform: perspective(200px) rotateX(0deg);
+    transform-origin: 0%;
+}
+.card .card-descrp #text {
+    padding: 5px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background: blue;
+    position: absolute;
+    transform: translateX(0%);
+}
+.card .card-descrp {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 6px;
+}
+
