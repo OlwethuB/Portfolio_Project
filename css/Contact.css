@@ -15,7 +15,7 @@ body {
 
 /* Dark ver */
 #darkver {
-  background-image: url(/Assets/images/Bkg-lndscp-1.png);
+  background-image: url(https://i.postimg.cc/CLmdXPgw/Bkg-lndscp-1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -27,7 +27,7 @@ input {
   border-radius: 15px;
   color: black;
   z-index: 1;
-  background: #2335e8;
+  background: #00ceb6;
   position: relative;
   font-weight: 1000;
   font-size: 17px;
@@ -49,7 +49,7 @@ input::before {
 }
 
 input:hover {
-  color: #2335e8;
+  color: #00ceb6;
   background-color: #212121;
 }
 
@@ -68,3 +68,9 @@ input:hover::before {
     font-size: 30px;
    } */
 /* end of form */
+
+/* email text */
+.text-wrap a {
+  overflow-wrap: anywhere;
+}
+/*  */
